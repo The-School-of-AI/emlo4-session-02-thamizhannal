@@ -107,7 +107,6 @@ def main():
     else:
         print("chosen device is cpu")
         device = torch.device("cpu")
-    #device = torch.device("cuda" if use_cuda else "cpu")
 
     # TODO: Load the MNIST dataset for training and testing
     train_kwargs = {'batch_size': args.batch_size}
@@ -154,8 +153,6 @@ def main():
     print("Has check point file created? {0} ",(os.path.exists('model_checkpoint.pth')))
     print("The End!")
 
-    #if args.save_model:
-    #    torch.save(model.state_dict(), "mnist_cnn.pt")
 
 if __name__ == "__main__":
     main()
