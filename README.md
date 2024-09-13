@@ -27,22 +27,30 @@ When you have completed the assignment, push your code to your Github repository
 # Solution README
 
 ### Pull the repo from git hub
+```
 $git clone https://github.com/The-School-of-AI/emlo4-session-02-thamizhannal.git
+```
 
 ### Build the docker container
+```
 $docker build --tag emlo4 . 
+```
 
 ### List the created container
+```
 $docker container ls
 CONTAINER ID   IMAGE                             COMMAND                  CREATED             STATUS             PORTS                  NAMES
 1d559729bf3d   emlo4                             "bash"                   About an hour ago   Up About an hour                          gallant_wozniak
 aa7bd9239360   docker/welcome-to-docker:latest   "/docker-entrypoint.…"   3 days ago          Up 3 days          0.0.0.0:8088->80/tcp   welcome-to-docker
 user@ emlo4-session-02-thamizhannal %
+```
 
 ### Run the docker container
+```
 $docker run -it emlo4 
-
+```
 ### Run grading.sh script
+```
 $sh tests/grading.sh
 
 ### output:
@@ -362,3 +370,4 @@ Has check point file created? {0}  True
 The End!
 🎉 All checks passed!
 (base) user@ emlo4-session-02-thamizhannal % 
+```
