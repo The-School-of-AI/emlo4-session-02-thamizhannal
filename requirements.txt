@@ -1,3 +1,4 @@
-torch==1.12.1
-torchvision==0.13.1
+torch==1.12.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+torchvision==0.13.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
 numpy==1.23.4
+black
